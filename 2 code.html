@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color:blanchedalmond;">
+    <div class="top" style="background-image: URL(ashes.jpg); width: 100%">
+    
+        <nav>
+            <a href="1 code.html">
+               Home    |
+            </a>
+            <a href="2 code.html">
+                About|
+            </a>
+            <a href="3 code.html">poke video|</a>
+            <a href="4 code.html">Feedback|</a>
+        </nav>
+  </div>
+  <div class="lhs" style="background-color:aquamarine">
+    <h1 style="text-align: center; color: red;"> ABOUT US</h1>
+    <section>
+        
+        <h3 style="font-size: 32px;">POKEMON FAN CLUB is one of the best pokemon website</h3> 
+
+        <P style="font-size: 30px;"> we post random videos of pokemon,<br>that you can streamed.<br>
+        this is the best pokemon website hope you enjoy the website<br></P>
+         <p style="font-size:26px">
+         Visit our <a href="3 code.html" >poke video</a> to know more about pokemon</p>
+
+    </section>
+    <div class="rhs" style="color: transparent">
+        <section>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="poke s1.jpg" style="width:50%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="poke s2.jpg" style="width:50%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="henry.png" style="width:50%">
+                <div class="text"></div>
+            </div>
+
+
+
+             <!-- The dots/circles -->
+             <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+    </div>
+    <script>
+            
+        let slideIndex= 0;
+        showSlides();
+        function showSlides(){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot")
+            for (i = 0; i< slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length)
+            {slideIndex = 1}
+            for(i = 0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace("active","");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+
+    </script>
+    <picture>
+</body>
+</html>
